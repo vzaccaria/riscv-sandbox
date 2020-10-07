@@ -6,9 +6,15 @@ To setup the docker environment run
 docker build . -t riscv-latest
 ```
 
-# Compiling an hello world riscv program
+This will create the container riscv-latest and install a few commands in the
+docker container, among which the gcc toolchain.
+
+# Compiling and running hello world 
 
 ```
-make helloWorld.exe  # for the elf riscv executable
-make helloWorld.s    # for the assembly
+make helloWorld.exe    # build the elf riscv executable of helloWorld.c
+make helloWorld.s      # produce the riscv assembly of helloWorld.c
+make helloWorld.run    # run helloWorld.exe with the rv8 instruction set simulator
 ```
+
+
