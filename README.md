@@ -18,4 +18,5 @@ make helloWorld.s      # produce the riscv assembly of helloWorld.c
 make helloWorld.run    # run helloWorld.exe with the rv8 instruction set simulator
 ```
 
-The docker commands will mount the current directory in the container.
+The docker commands in the makefile will mount the current directory in the
+container.
