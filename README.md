@@ -1,6 +1,7 @@
 # Setting up
 
-To setup the docker container
+Beware that the complete construction of the container might take a few hours (2
+hours in my case). To setup the docker container:
 
 ```
 docker build . -t riscv-latest
@@ -16,3 +17,5 @@ make helloWorld.exe    # build the elf riscv executable of helloWorld.c
 make helloWorld.s      # produce the riscv assembly of helloWorld.c
 make helloWorld.run    # run helloWorld.exe with the rv8 instruction set simulator
 ```
+
+The docker commands will mount the current directory in the container.
