@@ -29,7 +29,7 @@ all: helloWorld.exe helloWorld.s
 	$(NM) --format sysv $<
 	$(OBJDUMP) -t -r --disassemble=main $<
 
-# Remember to 'load' the program in the gdb
+# Remember to 'target sim' and then 'load' the program in the gdb
 %.gdb: %.exe
 	$(GDB) helloWorld.exe
 
