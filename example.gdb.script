@@ -1,0 +1,4 @@
+file "helloWorld.exe"
+target sim
+load
+run
